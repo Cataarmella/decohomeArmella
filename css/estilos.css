@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    font-family: 'Nunito', sans-serif;
+}
+/* Estrategia mobile  first */
+
+/* Version mobile y tablet */
+.containerIndex {  display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 9% auto auto auto 8%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "section1"
+      "section2"
+      "section3"
+      "footer";
+  }
+  
+  .header { grid-area: header; 
+    background-color: rgb(170, 162, 166);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+
+}
+  .logo{
+    margin-bottom: 31px;
+    width: 8%;
+    margin-left: 321px;
+  }
+
+  .categorias a:hover{
+    text-decoration-line: underline overline;
+    font-weight: 700;
+}
+.nav__link{
+ 
+    list-style: none;
+}
+.nav__link_a{
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+    padding: 10px;
+    
+
+}
+.nav__links{
+    display: flex;
+    flex-direction: row;
+    margin-left: 88px;
+
+}
+  .section1 { grid-area: section1; 
+display: flex;
+flex-direction: column;
+    align-items: center;
+
+}
+.tituloUno{
+    margin-top: 40px;
+}
+
+  .videoInicio {
+    margin-top: 3%;
+    object-fit: cover;
+    width: 800px !important;
+    height: 300px;
+} 
+  
+  .section2 { grid-area: section2; 
+    display: flex;
+flex-direction: column;
+    align-items: center;
+    padding: 47px;
+
+}
+  
+  .living {
+    width: 300px;
+    height: 300px;
+    padding: 3px;
+
+}
+.cocina {
+    height: 300px;
+    width: 300px;
+    padding: 3px;
+}
+
+.section3 { grid-area: section3; 
+    display: flex;
+flex-direction: column;
+    align-items: center;
+    padding: 47px;
+
+} 
+.baño{
+    height: 300px;
+    width: 300px;
+    padding: 3px;
+}
+.aromas {
+    height: 300px;
+    width: 300px;
+    padding: 3px;
+}
+  .footer { grid-area: footer;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(170, 162, 166);
+    height: 150px;
+    margin-top: 30px;
+}
+.redesSociales{
+    text-align: right;
+    margin: 10px;
+    padding: 6px;
+    position: relative;
+    margin-top: 0%;
+    text-decoration: none;
+    color: black;
+    font-size: 127%;
+}
+.inicio{
+    margin-left: 2rem; 
+    list-style: none;
+}
+.aInicio{
+    text-decoration: none;
+    color: black;
+    margin-right: 7.5rem;
+    font-size: 21px;
+}
+
+/* version desktop */
+@media (min-width: 1024px) {
+    .containerIndex {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 7% auto auto auto 7%;
+        gap: 0px 0px;
+        grid-template-areas:
+            "header header header header"
+            "section1 section1 section1 section1"
+            "section2 section2 section3 section3"
+            "section2 section2 section3 section3"
+            "footer footer footer footer";
+    }
+    .header{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    }
+    .logo{
+        margin-bottom: 15px;
+    width: 4%;
+    margin-left: 91px;
+      }
+      .nav__link_a{
+        text-decoration: none;
+        color: black;
+        font-size: 120%;
+        padding: 10px;
+        
+    
+    }
+      .videoInicio {
+        margin-top: 3%;
+        object-fit: cover;
+        width: 988px !important;
+        height: 381px;
+    } 
+
+    .section2{
+        display: flex;
+    }
+    .living {
+        width: 450px;
+        height: 450px;
+        padding: 3px;
+    
+    }
+    .cocina {
+        height: 450px;
+        width: 450px;
+        padding: 3px;
+    }
+    .baño{
+        height: 450px;
+        width: 450px;
+        padding: 3px;
+    }
+    .aromas {
+        height: 450px;
+        width: 450px;
+        padding: 3px;
+    } 
+
+.section2{
+    display: flex;
+
+}
+
+
+}
+
+.redesSociales{
+    text-align: right;
+    margin: 10px;
+    padding: 6px;
+    position: relative;
+    margin-top: 0%;
+    text-decoration: none;
+    color: black;
+    font-size: 110%;
+}
+.inicio{
+    margin-left: 2rem; 
+    list-style: none;
+}
+.aInicio{
+    text-decoration: none;
+    color: black;
+    margin-right: 7.5rem;
+    font-size: 110%;
+}
+
+/* nosotros */
+
+.containerNosotros {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.5fr 1fr 0.5fr; 
+    gap: 260px 0px; 
+    grid-template-areas: 
+      "header"
+      "nosotrosSeccion"
+      "footer"; 
+  }
+  .header { grid-area: header; }
+  .nosotrosSeccion {
+    grid-area: nosotrosSeccion;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+padding-top: 20px;}
+  .footer {grid-area: footer;}
+
+
+
+  /* version desktop */
+@media (min-width: 1024px) {
+    
+.containerNosotros {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.5fr 2fr 0.5fr; 
+    gap: 80px 0px; 
+    grid-template-areas: 
+      "header"
+      "nosotrosSeccion"
+      "footer"; 
+  }
+    .header{
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    }
+    .nav__link_a{
+        text-decoration: none;
+        color: black;
+        font-size: 120%;
+        padding: 10px;
+        
+    
+    }
+    .logo{
+        margin-bottom: 15px;
+    width: 4%;
+    margin-left: 91px;
+      }}
+
+
+      .nosotrosSeccion {
+        grid-area: nosotrosSeccion;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 148px;}
+
+
+      .redesSociales{
+        text-align: right;
+        margin: 10px;
+        padding: 6px;
+        position: relative;
+        margin-top: 0%;
+        text-decoration: none;
+        color: black;
+        font-size: 110%;
+    }
+    .inicio{
+        margin-left: 2rem; 
+        list-style: none;
+    }
+    .aInicio{
+        text-decoration: none;
+        color: black;
+        margin-right: 7.5rem;
+        font-size: 110%;
+    }
