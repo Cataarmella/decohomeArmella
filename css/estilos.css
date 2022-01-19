@@ -1,7 +1,11 @@
 
 
      /* boostrap */
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
      .logo{
          width: 8%;
      }
@@ -30,7 +34,7 @@
             height: 450px;
             width: 450px;}
 
-            .baño {
+  .baño {
                 height: 450px;
                 width: 450px;}
 
@@ -56,3 +60,6 @@
         font-size: 110%;
     }
 
+    
+
+  
